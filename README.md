@@ -1,14 +1,10 @@
-# Project Proposal Worksheet
-
-Use this worksheet to prepare your proposal. For additional help completing this worksheet, refer to the [Project Proposal Example](project-proposal-example.md) in this repository.
-
-## Project Description
+# Project Description
 
 Fleetify is a platform to manage all of you fleet vehicles in one place. It tracks the statistics of each vehicle like the income for each month, the mileage and the dates that it is booked. A user will no longer have to log into 4-5 different apps to track their vehicles.
 
 ## Wireframes
 
-![Color Scheme/Design](https://media.git.generalassemb.ly/user/17300/files/8e436980-3a87-11ea-931d-7a0189e8ce5c)
+![Color Scheme/Design](https://i.ibb.co/GcJ7Dhd/Untitled-Diagram-drawio-1.png)
 
 ### MVP User Stories
 
