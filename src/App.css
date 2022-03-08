@@ -1,1 +1,10 @@
-
+.navBarBG {
+  height: 67.75px;
+  width: 100%;
+  background: rgb(255, 95, 109);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 95, 109, 1) 28%,
+    rgba(255, 153, 114, 1) 100%
+  );
+}

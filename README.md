@@ -12,7 +12,7 @@ As a user I would want to know what product that I am purchasing. As a user I wo
 
 ## API
 
-I plan on using the google maps API and a vehicle tracking api.
+I plan on using the google maps API and a vehicle tracking api as a stretch goal.
 
 ## Component Hierarchy
 
@@ -20,4 +20,4 @@ I plan on using the google maps API and a vehicle tracking api.
 
 #### OPTIONAL:
 
-I will have state inthe highest componenet possible. I want to steer clear of prop drilling. I will try to use context in certain areas. I will also use json data that I have created instead of spinning up a server.
+I will have state in the highest componenet possible. I want to steer clear of prop drilling. I will try to use context in certain areas. I will also use json data that I have created instead of spinning up a server.
