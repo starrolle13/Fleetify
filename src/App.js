@@ -1,6 +1,6 @@
 // import logo from './logo.svg';
 import './App.css';
-import Banefits from './components/Banefits';
+import Benefits from './components/Benefits';
 import CellPhone from './components/CellPhone';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
@@ -15,7 +15,7 @@ function App() {
     <div className="App">
       <Navbar />
       <Header />
-      <Banefits />
+      <Benefits />
       <CellPhone />
       <Reviews />
       <Pricing />

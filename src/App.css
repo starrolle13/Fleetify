@@ -1,5 +1,46 @@
+body {
+  margin: 0%;
+  font-family: sans-serif;
+}
+
+/*NavBar*/
 .navBarBG {
   height: 67.75px;
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  background: rgb(255, 95, 109);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 95, 109, 1) 28%,
+    rgba(255, 153, 114, 1) 100%
+  );
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.navBarScroll {
+  height: 67.75px;
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.25);
+  background: rgb(255, 95, 109);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 95, 109, 1) 28%,
+    rgba(255, 153, 114, 1) 100%
+  );
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.headerBox {
+  height: 827px;
   width: 100%;
   background: rgb(255, 95, 109);
   background: linear-gradient(
@@ -7,4 +48,67 @@
     rgba(255, 95, 109, 1) 28%,
     rgba(255, 153, 114, 1) 100%
   );
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-right: 30px;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+/* Benefits */
+.benefitsContainer {
+  background-color: #fbfbfa;
+  height: 357px;
+  width: 100vw;
+}
+
+/* CellPhone */
+.cellContainer {
+  background-color: white;
+  height: 858px;
+  width: 100vw;
+}
+
+/*Reviews*/
+.reviewContainer {
+  background: rgb(255, 95, 109);
+  height: 329px;
+  width: 100vw;
+}
+
+/*Pricing*/
+.pricingContainer {
+  background: white;
+  height: 873px;
+  width: 100vw;
+}
+
+/*Sell*/
+.sellContainer {
+  background: rgb(255, 95, 109);
+  height: 329px;
+  width: 100vw;
+}
+
+/*Contact*/
+.contactContainer {
+  background-color: white;
+  height: 697px;
+  width: 100vw;
+}
+
+/*Footer*/
+.footerContainer {
+  background: rgb(255, 95, 109);
+  height: 431px;
+  width: 100vw;
 }
