@@ -2,6 +2,13 @@ import { useEffect, useState } from 'react';
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
+  // const [navbarOpen, setNavbarOpen] = useState(false);
+  // const handleToggle = () => {
+  //   setNavbarOpen(!navbarOpen);
+  // };
+  // const closeMenu = () => {
+  //   setNavbarOpen(false);
+  // };
 
   useEffect(() => {
     window.onscroll = function () {
@@ -15,13 +22,14 @@ export default function Navbar() {
 
   return (
     <div className={scrolled ? 'navBarScroll' : 'navBarBG'}>
-      <div className="logo"></div>
+      <div className="logo">FLEETIFY</div>
       <div className="menu">
         <a href="#home">Home</a>
         <a href="#reviews">Reviews</a>
-        <a href="#pricing">Pricing</a>
-        <a href="#features">Features</a>
-        <a href="#contact">Contact Us</a>
+        <a className="greyText" href="#pricing">
+          Pricing
+        </a>
+        <a href="#contact">Contact</a>
       </div>
     </div>
   );
