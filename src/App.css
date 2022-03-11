@@ -54,6 +54,35 @@ body {
     rgba(255, 95, 109, 1) 28%,
     rgba(255, 153, 114, 1) 100%
   );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+
+.headerTextBox {
+  margin-top: -100px;
+  height: 233px;
+  width: 800px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.headerTitle {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.headerDescrip {
+  font-size: 18px;
+  color: white;
+}
+.headerButton {
+  margin-left: 300px;
+  margin-top: 30px;
 }
 
 .menu {
@@ -96,12 +125,14 @@ a:hover {
   color: #212529;
   font-weight: 300;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 @media (min-width: 730px) {
   .benefitsContainer {
     display: flex;
     flex-direction: row;
-    height: 357px;
+    height: 454px;
     width: 100vw;
   }
 }
@@ -117,7 +148,7 @@ a:hover {
   .benefitsContainer {
     display: flex;
     flex-direction: row;
-    height: 357px;
+    height: 454px;
     width: 100vw;
   }
 }
@@ -132,10 +163,24 @@ a:hover {
   padding: 40px 0 35px 0;
   margin: 20px;
 }
+.cardBox:hover {
+  background-color: rgb(255, 95, 109);
+  border-radius: 10px;
+  color: white;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+/* 
 .benefitDescription {
   color: #999999;
 }
 
+.benefitDescription:hover {
+  color: white;
+
+} */
 /* CellPhone */
 .cellContainer {
   background-color: white;
@@ -177,6 +222,10 @@ a:hover {
 
 .pricingCard:hover {
   background-color: rgb(255, 95, 109);
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 /*Sell*/
@@ -193,9 +242,47 @@ a:hover {
   width: 100vw;
 }
 
+/*CellPhone*/
+.cellContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.phoneSvgBox {
+  height: 603px;
+  width: 553px;
+}
+.phoneSvg {
+  background-image: url('https://i.ibb.co/6HV2kLq/Untitled-design-32.png');
+  background-repeat: no-repeat;
+  height: 603px;
+  width: 301px;
+}
+
+.rightBox {
+  height: 398px;
+  width: 555px;
+  display: flex;
+  flex-direction: column;
+}
+
 /*Footer*/
 .footerContainer {
   background: rgb(255, 95, 109);
   height: 431px;
   width: 100vw;
+}
+
+/*misc*/
+button {
+  border: none;
+  color: rgb(255, 95, 109);
+  background-color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  height: 46px;
+  width: 197px;
 }
