@@ -48,12 +48,16 @@ body {
 .headerBox {
   height: 827px;
   width: 100%;
-  background: rgb(255, 95, 109);
+  /* background: rgb(255, 95, 109);
   background: linear-gradient(
     90deg,
     rgba(255, 95, 109, 1) 28%,
     rgba(255, 153, 114, 1) 100%
-  );
+  ); */
+  background-image: url('https://images.pexels.com/photos/38271/ipad-map-tablet-internet-38271.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -73,12 +77,12 @@ body {
   font-size: 30px;
   display: flex;
   justify-content: center;
-  color: white;
+  color: rgb(255, 95, 109);
 }
 
 .headerDescrip {
   font-size: 18px;
-  color: white;
+  color: rgb(255, 95, 109);
 }
 .headerButton {
   margin-left: 300px;
@@ -285,4 +289,9 @@ button {
   font-size: 16px;
   height: 46px;
   width: 197px;
+}
+
+#map {
+  height: 400px;
+  width: 100%;
 }
