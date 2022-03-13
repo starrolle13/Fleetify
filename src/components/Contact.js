@@ -21,8 +21,8 @@ export default function Contact({
   });
 
   const initialState = {
-    issueType: '',
-    subject: '',
+    name: '',
+    email: '',
     message: ''
   };
   const [formState, setFormState] = useState(initialState);
@@ -53,36 +53,41 @@ export default function Contact({
     <div className="contactContainer">
       <div className="formBox">
         <div className="form">
-          <form onSubmit={handleSubmit}>
-            <label htmlFor="issueType">Type of Issue:</label>
-            <select
-              id="issueType"
-              onChange={handleChange}
-              value={formState.issueType}
-            >
-              <option value="outage">Service Outage</option>
-              <option value="billing">Billing</option>
-              <option value="cancel">Cancel Service</option>
-            </select>
-            <label htmlFor="subject">Subject:</label>
+          <form onSubmit={handleSubmit} className="formItems">
+            {/* <label htmlFor="email">Name:</label> */}
             <input
+              placeholder="Name"
               type="text"
-              id="subject"
+              id="name"
               onChange={handleChange}
-              value={formState.subject}
+              value={formState.name}
+              className="name"
             />
-            <label htmlFor="message">Message</label>
+            {/* <label htmlFor="email">Email:</label> */}
+            <input
+              placeholder="Email"
+              type="text"
+              id="email"
+              onChange={handleChange}
+              value={formState.email}
+              className="email"
+            />
+            {/* <label htmlFor="message">Message</label> */}
             <textarea
+              placeholder="Message"
               id="message"
               cols="30"
               rows="10"
               onChange={handleChange}
               value={formState.message}
+              className="message"
             ></textarea>
-            <button type="submit">Send</button>
+            <button type="submit" className="submitButton">
+              Send
+            </button>
           </form>
         </div>
-        <div className="mapApi" ref={ref} id="map"></div>
+        <div className="mapApi" ref={ref}></div>
       </div>
     </div>
   );
