@@ -50,12 +50,6 @@ body {
 .headerBox {
   height: 827px;
   width: 100%;
-  /* background: rgb(255, 95, 109);
-  background: linear-gradient(
-    90deg,
-    rgba(255, 95, 109, 1) 28%,
-    rgba(255, 153, 114, 1) 100%
-  ); */
   background-image: url('https://images.pexels.com/photos/38271/ipad-map-tablet-internet-38271.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
   background-size: cover;
   background-repeat: no-repeat;
@@ -68,27 +62,30 @@ body {
 
 .headerTextBox {
   margin-top: -100px;
-  height: 233px;
-  width: 800px;
+  height: 400px;
+  padding: 10px;
+  width: 500px;
   display: flex;
   justify-content: center;
   flex-direction: column;
+  background-color: rgba(44, 41, 41, 0.658);
 }
 
 .headerTitle {
   font-size: 30px;
   display: flex;
   justify-content: center;
-  color: rgb(255, 95, 109);
+  color: rgba(255, 95, 109, 1);
 }
 
 .headerDescrip {
   font-size: 18px;
-  color: rgb(255, 95, 109);
+  color: white;
 }
 .headerButton {
-  margin-left: 300px;
+  /* margin-left: 300px; */
   margin-top: 30px;
+  border-radius: 5px;
 }
 
 .menu {
@@ -134,30 +131,6 @@ a:hover {
   justify-content: center;
   align-items: center;
 }
-@media (min-width: 730px) {
-  .benefitsContainer {
-    display: flex;
-    flex-direction: row;
-    height: 454px;
-    width: 100vw;
-  }
-}
-@media (min-width: 811px) {
-  .benefitsContainer {
-    display: flex;
-    flex-direction: row;
-    height: 800px;
-    width: 100vw;
-  }
-}
-@media (min-width: 1200px) {
-  .benefitsContainer {
-    display: flex;
-    flex-direction: row;
-    height: 454px;
-    width: 100vw;
-  }
-}
 
 .cardBox {
   height: 269px;
@@ -168,6 +141,10 @@ a:hover {
   text-align: center;
   padding: 40px 0 35px 0;
   margin: 20px;
+  background-color: rgb(255, 95, 109);
+  border-radius: 10px;
+  color: white;
+  padding: 5px;
 }
 .cardBox:hover {
   background-color: rgb(255, 95, 109);
@@ -178,19 +155,16 @@ a:hover {
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
-/* 
+
 .benefitDescription {
-  color: #999999;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
-.benefitDescription:hover {
-  color: white;
-
-} */
-/* CellPhone */
 .cellContainer {
   background-color: white;
-  height: 858px;
+  height: 1200px;
   width: 100vw;
 }
 
@@ -212,8 +186,8 @@ a:hover {
   flex-wrap: wrap;
 }
 .pricingCard {
-  height: 444px;
-  width: 360px;
+  height: 222px;
+  width: 180px;
   background-color: white;
   color: #212529;
   border-radius: 10px;
@@ -244,7 +218,7 @@ a:hover {
 /*Contact*/
 .contactContainer {
   background-color: white;
-  height: 697px;
+  height: 1229px;
   width: 100vw;
   display: flex;
   justify-content: center;
@@ -253,27 +227,27 @@ a:hover {
 .formBox {
   margin-top: 70px;
   display: flex;
-  width: 1139px;
-  height: 567px;
+  width: 426px;
+  height: 1099px;
   color: #212529;
   justify-content: center;
   align-content: center;
-  flex-direction: row;
+  flex-direction: column;
   box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
 }
 
 .form {
   display: flex;
   flex-direction: row;
-  width: 684px;
   height: 567px;
   justify-content: center;
   align-items: center;
 }
 
 .mapApi {
-  height: 567px;
-  width: 455px;
+  height: 530px;
+  width: 426px;
 }
 
 .formItems {
@@ -283,33 +257,37 @@ a:hover {
 
 .name {
   height: 45px;
-  width: 544px;
+  width: 356px;
   border-radius: 5px;
   border: 1px solid #eeeeee;
   margin-bottom: 20px;
+  padding-left: 7px;
 }
 
 .email {
   height: 45px;
-  width: 544px;
+  width: 356px;
   border-radius: 5px;
   border: 1px solid #eeeeee;
   margin-bottom: 20px;
+  padding-left: 7px;
 }
 
 .message {
   height: 100px;
-  width: 544px;
+  width: 356px;
   border-radius: 5px;
   border: 1px solid #eeeeee;
   font-family: sans-serif;
   margin-bottom: 20px;
+  padding-left: 7px;
 }
 
 .submitButton {
   background-color: rgb(255, 95, 109);
   color: white;
   border-radius: 5px;
+  margin-bottom: 10px;
 }
 
 /*CellPhone*/
@@ -317,10 +295,15 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  height: 1400px;
 }
 .phoneSvgBox {
-  height: 603px;
+  height: 803px;
   width: 553px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .phoneSvg {
   background-image: url('https://i.ibb.co/6HV2kLq/Untitled-design-32.png');
@@ -331,9 +314,20 @@ a:hover {
 
 .rightBox {
   height: 398px;
-  width: 555px;
+  width: 400px;
   display: flex;
   flex-direction: column;
+}
+
+.cellSteps {
+  background-color: white;
+  height: 150px;
+  width: 426px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin-bottom: 30px;
 }
 
 /*Footer*/
@@ -355,4 +349,212 @@ button {
   font-size: 16px;
   height: 46px;
   width: 197px;
+}
+
+@media (min-width: 726px) {
+  .benefitsContainer {
+    display: flex;
+    flex-direction: row;
+    height: 1000px;
+    width: 100vw;
+  }
+
+  .contactContainer {
+    background-color: white;
+    height: 900px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+  }
+  .cellContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 1000px;
+  }
+  .rightBox {
+    height: 398px;
+    width: 555px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .pricingContainer {
+    background: #ffffff;
+    height: 900px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+  .pricingCard {
+    height: 344px;
+    width: 260px;
+    background-color: white;
+    color: #212529;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px 0 35px 0;
+    margin: 20px;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+  }
+  .formBox {
+    margin-top: 70px;
+    display: flex;
+    width: 695px;
+    height: 567px;
+    color: #212529;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    gap: 20px;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: row;
+    width: 330px;
+    height: 317px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+  }
+  .mapApi {
+    width: 289.5px;
+    height: 567px;
+  }
+  .name {
+    height: 45px;
+    width: 306px;
+    border-radius: 5px;
+    border: 1px solid #eeeeee;
+    margin-bottom: 20px;
+    padding-left: 7px;
+  }
+  .email {
+    height: 45px;
+    width: 306px;
+    border-radius: 5px;
+    border: 1px solid #eeeeee;
+    margin-bottom: 20px;
+    padding-left: 7px;
+  }
+
+  .message {
+    height: 100px;
+    width: 306px;
+    border-radius: 5px;
+    border: 1px solid #eeeeee;
+    margin-bottom: 20px;
+    padding-left: 7px;
+  }
+}
+@media (min-width: 1200px) {
+  .benefitsContainer {
+    display: flex;
+    flex-direction: row;
+    height: 454px;
+    width: 100vw;
+  }
+
+  .contactContainer {
+    background-color: white;
+    height: 900px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+  }
+
+  .pricingContainer {
+    background: #ffffff;
+    height: 1000px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+
+  .pricingCard {
+    height: 444px;
+    width: 360px;
+    background-color: white;
+    color: #212529;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px 0 35px 0;
+    margin: 20px;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+  }
+  .formBox {
+    margin-top: 70px;
+    display: flex;
+    width: 1139px;
+    height: 567px;
+    color: #212529;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+  }
+
+  .form {
+    display: flex;
+    flex-direction: row;
+    width: 684px;
+    height: 567px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mapApi {
+    height: 567px;
+    width: 455px;
+  }
+
+  .formItems {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .name {
+    height: 45px;
+    width: 544px;
+    border-radius: 5px;
+    border: 1px solid #eeeeee;
+    margin-bottom: 20px;
+  }
+
+  .email {
+    height: 45px;
+    width: 544px;
+    border-radius: 5px;
+    border: 1px solid #eeeeee;
+    margin-bottom: 20px;
+  }
+
+  .message {
+    height: 100px;
+    width: 544px;
+    border-radius: 5px;
+    border: 1px solid #eeeeee;
+    font-family: sans-serif;
+    margin-bottom: 20px;
+  }
+
+  .submitButton {
+    background-color: rgb(255, 95, 109);
+    color: white;
+    border-radius: 5px;
+  }
 }
