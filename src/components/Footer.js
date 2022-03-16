@@ -5,20 +5,20 @@ export default function Footer() {
     <div className="footerContainer">
       <div className="footerLinks">
         <div className="footerPhone">
-          <span className="fPhone">phoneicon</span>(213)999-9999
+          <span className="fPhone"></span>(213)999-9999
         </div>
         <div className="footerEmail">
-          <span className="fEmail">phoneicon</span>123me@gmail.com
+          <span className="fEmail"></span>123me@gmail.com
         </div>
         <div className="footerAddress">
-          <span className="fAddress">phoneicon</span>123 Anywhere St
+          <span className="fAddress"></span>123 Anywhere St
         </div>
       </div>
       <div className="social">
-        <div className="facebook">facebook</div>
-        <div className="twitter">twitter</div>
-        <div className="instagram">instagram</div>
-        <div className="pinterest">pinterest</div>
+        <div className="facebook"></div>
+        <div className="twitter"></div>
+        <div className="instagram"></div>
+        <div className="pinterest"></div>
       </div>
       <div className="copyright">
         Copyright &#169;<span className="bold"> Fleetify.</span> All Rights

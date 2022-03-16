@@ -14,15 +14,15 @@ export default function Contact({
 }) {
   const ref = useRef();
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    axios.post('localhost:8000/api/contacts', {
-      name: formState.name,
-      email: formState.email,
-      message: formState.message
-    });
-    setFormState();
-  };
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   axios.post('localhost:8000/api/contacts', {
+  //     name: formState.name,
+  //     email: formState.email,
+  //     message: formState.message
+  //   });
+  //   setFormState();
+  // };
 
   useEffect(() => {
     new window.google.maps.Map(ref.current, {
@@ -44,16 +44,21 @@ export default function Contact({
 
   // Event Handler: a callback function to
   // be run when the event is observed
-  // const handleSubmit = (event) => {
-  //   // we always need to stop the browser
-  //   // from submitting the form or the page
-  //   // will be refreshed.
-  //   event.preventDefault();
-  //   // do something with the data in the component state
-  //   console.log(formState);
-  //   // clear the form
-  //   setFormState(initialState);
-  // };
+  const handleSubmit = (event) => {
+    // we always need to stop the browser
+    // from submitting the form or the page
+    // will be refreshed.
+    event.preventDefault();
+    // do something with the data in the component state
+    axios.post('localhost:8000/api/contacts', {
+      name: formState.name,
+      email: formState.email,
+      message: formState.message
+    });
+    console.log(formState);
+    // clear the form
+    setFormState(initialState);
+  };
 
   // Event Listener: tells the browser
   // which event to listen for on which

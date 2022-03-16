@@ -68,14 +68,14 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background-color: rgba(44, 41, 41, 0.658);
+  background-color: rgba(202, 143, 143, 0.658);
 }
 
 .headerTitle {
   font-size: 30px;
   display: flex;
   justify-content: center;
-  color: rgba(255, 95, 109, 1);
+  color: white;
 }
 
 .headerDescrip {
@@ -605,4 +605,49 @@ button {
     color: white;
     border-radius: 5px;
   }
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.facebook {
+  background-image: url('https://i.ibb.co/KjMY6h9/4.png');
+  height: 40px;
+  width: 40px;
+}
+
+.twitter {
+  background-image: url('https://i.ibb.co/KbhKpDq/6.png');
+  height: 40px;
+  width: 40px;
+}
+.instagram {
+  background-image: url('https://i.ibb.co/L6392jp/5.png');
+  height: 40px;
+  width: 40px;
+}
+.pinterest {
+  background-image: url('https://i.ibb.co/hsG8j9h/7.png');
+  height: 40px;
+  width: 40px;
+}
+
+.fPhone {
+  background-image: url('https://i.ibb.co/BcmgyDp/1.png');
+  background-repeat: no-repeat;
+  height: 40px;
+  width: 40px;
+}
+
+.fEmail {
+  background-image: url('https://i.ibb.co/QbzpfhK/2.png');
+  height: 40px;
+  width: 40px;
+}
+
+.fAddress {
+  background-image: url('https://i.ibb.co/kc1vfyY/3.png');
+  height: 40px;
+  width: 40px;
 }

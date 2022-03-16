@@ -12,7 +12,7 @@ export default function Header() {
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
         </div> */}
-        <button className="headerButton">Contact</button>
+        {/* <button className="headerButton">Contact</button> */}
       </div>
     </div>
   );
