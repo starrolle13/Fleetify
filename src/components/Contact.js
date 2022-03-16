@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from 'react';
+import axios from 'axios';
 
 export default function Contact({
   center,
@@ -12,6 +13,16 @@ export default function Contact({
   mapTypeId: 'hybrid'
 }) {
   const ref = useRef();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    axios.post('localhost:8000/api/contacts', {
+      name: formState.name,
+      email: formState.email,
+      message: formState.message
+    });
+    setFormState();
+  };
 
   useEffect(() => {
     new window.google.maps.Map(ref.current, {
@@ -33,16 +44,16 @@ export default function Contact({
 
   // Event Handler: a callback function to
   // be run when the event is observed
-  const handleSubmit = (event) => {
-    // we always need to stop the browser
-    // from submitting the form or the page
-    // will be refreshed.
-    event.preventDefault();
-    // do something with the data in the component state
-    console.log(formState);
-    // clear the form
-    setFormState(initialState);
-  };
+  // const handleSubmit = (event) => {
+  //   // we always need to stop the browser
+  //   // from submitting the form or the page
+  //   // will be refreshed.
+  //   event.preventDefault();
+  //   // do something with the data in the component state
+  //   console.log(formState);
+  //   // clear the form
+  //   setFormState(initialState);
+  // };
 
   // Event Listener: tells the browser
   // which event to listen for on which
@@ -54,7 +65,6 @@ export default function Contact({
       <div className="formBox">
         <div className="form">
           <form onSubmit={handleSubmit} className="formItems">
-            {/* <label htmlFor="email">Name:</label> */}
             <input
               placeholder="Name"
               type="text"
@@ -63,7 +73,6 @@ export default function Contact({
               value={formState.name}
               className="name"
             />
-            {/* <label htmlFor="email">Email:</label> */}
             <input
               placeholder="Email"
               type="text"
@@ -72,7 +81,6 @@ export default function Contact({
               value={formState.email}
               className="email"
             />
-            {/* <label htmlFor="message">Message</label> */}
             <textarea
               placeholder="Message"
               id="message"
@@ -82,7 +90,11 @@ export default function Contact({
               value={formState.message}
               className="message"
             ></textarea>
-            <button type="submit" className="submitButton">
+            <button
+              type="submit"
+              onSubmit={handleSubmit}
+              className="submitButton"
+            >
               Send
             </button>
           </form>
