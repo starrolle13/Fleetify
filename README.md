@@ -18,6 +18,10 @@ I plan on using the google maps API and a vehicle tracking api as a stretch goal
 
 ![Outline](https://i.ibb.co/1vrn8gx/Untitled-Diagram-drawio.png)
 
+## Screenshots
+
+![Header](https://i.ibb.co/gDH3rRV/Screen-Shot-2022-03-16-at-6-56-42-AM.png)
+
 #### OPTIONAL:
 
 I will have state in the highest componenet possible. I want to steer clear of prop drilling. I will try to use context in certain areas. I will also use json data that I have created instead of spinning up a server.
